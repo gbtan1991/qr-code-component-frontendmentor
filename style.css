@@ -7,9 +7,46 @@
 }
 
 
-*, p{
-    font-size: 15px;
+/* 
+- Mobile: 375px
+- Desktop: 1440px 
+*/
+
+*, ::before, ::after{
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
 }
+
+body{
+    background-color: var(--grayish-blue);
+    padding: 0;
+    margin: 0;
+}
+
+
+main{
+    background-color: var(--white);
+    margin: 85px auto 80px auto;
+    max-width: 320px;
+    height: 497px;
+    border-radius: 20px;    
+    display: grid;
+    grid-template-rows: 1fr 1fr;
+    
+}
+
+.header{
+    background: url(images/image-qr-code.png);
+    background-position: top left;
+    background-size: cover;
+    height: 287px;
+    width: 287px;
+    margin: 16px auto 16px auto;
+    border-radius: 20px;
+
+}
+
 
 
 
