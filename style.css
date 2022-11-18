@@ -3,8 +3,6 @@
 --light-gray: hsl(212, 45%, 89%);
 --grayish-blue: hsl(220, 15%, 55%);
 --dark-blue: hsl(218, 44%, 22%);
-
-
 --border-radius: 10px;
 
 }
@@ -20,6 +18,7 @@
     margin: 0;
     padding: 0;
     font-family: 'Outfit', sans-serif;
+    font-size: 62.5%;
     
 }
 
@@ -27,36 +26,42 @@ body{
     background-color: var(--light-gray);
     padding: 0;
     margin: 0;
-    font-size: 15px;
+    display: grid;
+    min-height: 100vh;
+    place-content: center;
 }
 
 
 main{
     background-color: var(--white);
-    margin: 85px auto 80px auto;
     max-width: 320px;
     height: 497px;
     border-radius: var(--border-radius);  
     display: grid;
-    grid-template-rows: 1fr 1fr;
+    align-items: center;
+    justify-items: center;
+    
     
 }
 
 .header{
-    background: url(images/image-qr-code.png);
+    
     background-position: top left;
     background-size: cover;
     height: 287px;
     width: 287px;
-    margin: 16px auto 16px auto;
     border-radius: var(--border-radius)
 
+}
+
+img{
+    max-width: 285px;
+    border-radius: var(--border-radius);
 }
 
 .section{
     display: flex;
     flex-direction: column;
-    
     margin: 9px 18px;
     text-align: center;
     
@@ -66,17 +71,19 @@ main{
 .section h1{
     font-weight: 700;
     color: var(--dark-blue); 
+    font-size: 1.8rem;
 
 }
 
 .section p{
     margin: 10px;
     font-weight: 400;
-    color: var(--grayish-blue)
+    color: var(--grayish-blue);
+    font-size: 1.5rem;
 }
 
 
 
 
-.attribution { font-size: 11px; text-align: center; }
-.attribution a { color: hsl(228, 45%, 44%); }
+.attribution { font-size: 1.1rem; text-align: center; }
+.attribution a { color: hsl(228, 45%, 44%); font-size: 1.1rem}
