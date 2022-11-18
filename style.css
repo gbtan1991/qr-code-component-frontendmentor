@@ -53,7 +53,7 @@ main{
 
 }
 
-img{
+.image-qr-code{
     max-width: 285px;
     border-radius: var(--border-radius);
 }
