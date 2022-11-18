@@ -29,6 +29,7 @@ body{
     display: grid;
     min-height: 100vh;
     place-content: center;
+    
 }
 
 
@@ -46,8 +47,6 @@ main{
 
 .header{
     
-    background-position: top left;
-    background-size: cover;
     height: 287px;
     width: 287px;
     border-radius: var(--border-radius)
@@ -72,6 +71,7 @@ img{
     font-weight: 700;
     color: var(--dark-blue); 
     font-size: 1.8rem;
+    
 
 }
 
